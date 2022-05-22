@@ -52,6 +52,8 @@ def NoToken
              if r.status_code == 200:
                  print(" Valid | {} ".format(line.strip("\n")))
                  os._exit(1)
+             if r.status_code == 429:
+                 print(" RateLimited, Not Checked. | {} ".format(line.strip("\n")))
              else:
         	     print(" Invalid | {} ".format(line.strip("\n")))
             
