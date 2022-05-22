@@ -38,7 +38,7 @@ def NoToken
      for n in range(int(num)):
        f=open("Nitro Codes.txt","w", encoding='utf-8')
        print("Wait, Generating for you!")
-       y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(16))
+       y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(24))
        f.write('https://discord.gift/')
        f.write(y)
        f.write("\n")
@@ -59,7 +59,7 @@ def UseToken
      for n in range(int(num)):
        f=open("Nitro Codes.txt","w", encoding='utf-8')
        print("Wait, Generating for you!")
-       y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(16))
+       y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(24))
        f.write('https://discord.gift/')
        f.write(y)
        f.write("\n")
@@ -71,7 +71,7 @@ def UseToken
 #参考元 https://github.com/Vedza/NitroSniper
 async with httpx.AsyncClient() as client:
     result = await client.post(
-        'https://discordapp.com/api/v6/entitlements/gift-codes/' + nitro + '/redeem',
+        'https://discordapp.com/api/v9/entitlements/gift-codes/' + nitro + '/redeem',
         headers={'authorization': token, 'user-agent': 'Mozilla/5.0'})
      try:
          print(
