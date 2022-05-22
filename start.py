@@ -53,7 +53,9 @@ def NoToken
                  print(" Valid | {} ".format(line.strip("\n")))
                  os._exit(1)
              if r.status_code == 429:
-                 print(" RateLimited, Not Checked. | {} ".format(line.strip("\n")))
+                 print(" RateLimited, Not Checked. Waiting a 15min | {} ".format(line.strip("\n")))
+                 time.sleep(900)
+                 print("Ok, Start Checker.")
              else:
         	     print(" Invalid | {} ".format(line.strip("\n")))
             
@@ -107,3 +109,14 @@ elif qt == ""
 else: 
     print("Wrong Input, NoTokenMode.") 
     NoToken()
+# これ見てる人へ。
+# 彼氏ほしくなりました。
+# あまーいあまーい、そんな恋をしてみたくなりました。
+# 私なんかのGithubを見る人も少なくて、Codeを見る人も少ないでしょうが。
+# それでも希望を持ちたい生物なので。
+# なんか恐らく100%連絡取れそうなTwitter書きます。
+# @PmoMl1
+# 連絡取れても私は声も出さないでしょうし、顔も、リアルのことも一切話さないとは思いますけど、それでもチャットだけでのやり取り又は私が完全聞き専でも良いって方は連絡ください。
+# まぁ多分こんなの一時的な突発的感情なんでしょうがw
+# 後変なのは無視します。
+# 2日間以上来なかったら無視か冬眠してます。
