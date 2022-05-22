@@ -104,4 +104,4 @@ elif qt == ""
     NoToken()
 else: 
     print("Wrong Input, NoTokenMode.") 
-    NoYoken()
+    NoToken()
