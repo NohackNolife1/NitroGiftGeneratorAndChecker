@@ -68,6 +68,7 @@ def UseToken
          for line in f:
             nitro = line.strip("\n")
 #ねむねむなので別の人のCode
+#参考元 https://github.com/Vedza/NitroSniper
 async with httpx.AsyncClient() as client:
     result = await client.post(
         'https://discordapp.com/api/v6/entitlements/gift-codes/' + nitro + '/redeem',
